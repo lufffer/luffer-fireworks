@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
@@ -16,7 +16,7 @@ export default {
         error: '#81001e',
       },
       backgroundImage: {
-        homeImg: 'url("./src/assets/home.jpg")',
+        homeImg: 'url("./assets/home.jpg")',
         aboutImg:
           'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./src/assets/about.jpg")',
         sparckleImg:

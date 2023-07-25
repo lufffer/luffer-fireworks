@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -7,22 +7,24 @@
   <title>Luffer Fireworks</title>
 </head>
 
-<body>
-  <section id="home" class="h-screen flex flex-col">
-    <header class="flex h-[48px] px-4 justify-between">
+<body class="bg-homeImg bg-cover bg-fixed bg-center lg:bg-none">
+  <section id="home" class="flex min-h-screen flex-col lg:bg-homeImg lg:bg-cover lg:bg-fixed lg:bg-center">
+    <header class="flex h-[48px] justify-between px-4">
       <div class="flex items-center">
         <image src="./assets/logo.svg" alt="logo" />
         <span class="font-bold text-primary">Fireworks</span>
       </div>
-      <div class="text-light font-bold flex items-center">
-        <p><span id="en" class="cursor-pointer hover:text-primary">EN</span> | <span id="es"
-            class="cursor-pointer hover:text-primary">ES</span></p>
+      <div class="flex items-center font-bold text-light">
+        <p>
+          <span id="en" class="cursor-pointer hover:text-primary">EN</span> |
+          <span id="es" class="cursor-pointer hover:text-primary">ES</span>
+        </p>
       </div>
     </header>
 
-    <main class="flex justify-center flex-1">
+    <main class="flex flex-1 justify-center">
       <h1 id="title"
-        class="self-center w-auto justify-self-center text-5xl font-semibold text-light md:text-7xl lg:text-9xl">
+        class="text-light-light w-auto self-center justify-self-center text-5xl font-semibold text-light md:text-7xl lg:text-9xl">
       </h1>
     </main>
   </section>
