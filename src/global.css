@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+:root {
+  --dark: #000000;
+  --light: #ffffff;
+  --secondary: #0085fb;
+  --tertiary: #ffe3e9;
+  --success: #009485;
+  --error: #81001e;
+  --toastify-color-success: var(--success);
+  --toastify-color-erro: var(--error);
+}
+
+body {
+  background-color: var(--dark);
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 1024px) {
+  .text-light-light {
+    text-shadow: 0 0 15px var(--light);
+  }
+
+  .text-secondary-light {
+    text-shadow: 0 0 15px var(--secondary);
+  }
+
+  .text-tertiary-light {
+    text-shadow: 0 0 15px var(--tertiary);
+  }
+
+  .white-light {
+    filter: drop-shadow(0px 0px 15px var(--light));
+  }
+
+  .tertiary-light {
+    filter: drop-shadow(0px 0px 15px var(--tertiary));
+  }
+}

@@ -1,19 +1,17 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve --mode development",
-    "start": "webpack serve --mode production"
-  },
   "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
     "@types/dotenv-webpack": "^7.0.4",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "autoprefixer": "^10.4.14",
+    "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
+    "dotenv": "^16.3.1",
     "dotenv-webpack": "^8.0.1",
-    "eslint": "^8.44.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
@@ -22,6 +20,7 @@
     "postcss": "^8.4.25",
     "postcss-loader": "^7.3.3",
     "sharp": "^0.32.1",
+    "tailwindcss": "^3.3.3",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
     "typescript-plugin-css-modules": "^5.0.1",
@@ -30,8 +29,10 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "tailwindcss": "^3.3.2"
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "start": "webpack serve --mode production"
   }
 }
