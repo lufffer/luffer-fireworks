@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,29 +28,55 @@
   --toastify-color-erro: var(--error);
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  font-family: "Raleway", sans-serif;
   background-color: var(--dark);
   overflow-x: hidden;
+}
+
+iframe {
+  border-radius: 1rem;
+  width: 75%;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2rem;
+}
+
+td {
+  padding: 0.5rem 0;
+}
+
+.carousel {
+  position: relative;
+  height: 50vh;
+  width: 75%;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.error-message {
+  color: red;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel {
+    height: 75vh;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .text-light-light {
     text-shadow: 0 0 15px var(--light);
-  }
-
-  .text-secondary-light {
-    text-shadow: 0 0 15px var(--secondary);
-  }
-
-  .text-tertiary-light {
-    text-shadow: 0 0 15px var(--tertiary);
-  }
-
-  .white-light {
-    filter: drop-shadow(0px 0px 15px var(--light));
-  }
-
-  .tertiary-light {
-    filter: drop-shadow(0px 0px 15px var(--tertiary));
   }
 }

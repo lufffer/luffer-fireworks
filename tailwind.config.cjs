@@ -16,17 +16,17 @@ module.exports = {
         error: '#81001e',
       },
       backgroundImage: {
-        homeImg: 'url("./assets/home.jpg")',
+        homeImg: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/home.jpg")',
         aboutImg:
-          'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./src/assets/about.jpg")',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/about.jpg")',
         sparckleImg:
-          'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./src/assets/sparckle.jpg")',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/sparckle.jpg")',
         mineImg:
-          'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./src/assets/public/mine.jpg")',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/mine.jpg")',
         contactImg:
-          'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./src/assets/public/contact.jpg")',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/contact.jpg")',
         testimonyImg:
-          'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./src/assets/testimonies.jpg")',
+          'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/testimonies.jpg")',
       },
     },
 
