@@ -1,5 +1,4 @@
 const path = require('path');
-const DotenvWebpack = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinizerWebpackPlugin = require('css-minimizer-webpack-plugin');
@@ -7,15 +6,14 @@ const ImageMinimizerWebpackPlugin = require('image-minimizer-webpack-plugin');
 
 module.exports = (root) => ({
   devtool: 'source-map', 
-  devServer: {static: path.join(root, 'dist'), hot: true, watchFiles: [path.join(root, 'src', '*.html')]},
   entry: path.join(root, 'src', 'index.ts'),
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       { test: /\.html$/, loader: 'html-loader' },
       { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'] },
-      { test: /\.ts$/, use: ['babel-loader','ts-loader'], exclude: /node_modules/ },
-      { test: /\.(gif|jpg|jpeg|png|svg|webp)$/, type: 'asset/resource' },
+      { test: /\.ts$/, use: ['ts-loader'], exclude: /node_modules/ },
+      { test: /\.(gif|jpg|jpeg|png|svg|webp)$/, type: 'asset' },
     ],
   },
   optimization: {
@@ -24,25 +22,40 @@ module.exports = (root) => ({
       new CssMinizerWebpackPlugin(),
       new ImageMinimizerWebpackPlugin({
         minimizer: {
-          implementation: ImageMinimizerWebpackPlugin.sharpMinify,
+          implementation: ImageMinimizerWebpackPlugin.imageminMinify,
           options: {
-            encodeOptions: {},
-          },
+            plugins: [['mozjpeg', {quality: 50}]]
+          }
         },
       }),
     ],
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      },
+      chunks: 'all'
+    }
   },
   plugins: [
-    new DotenvWebpack(),
     new HtmlWebpackPlugin({ template: path.join(root, 'src', 'index.html') }),
+    new HtmlWebpackPlugin({
+      filename: path.join('es', 'index.html'),
+      template: path.join(root, 'src', 'es', 'index.html'),
+    }),
     new MiniCssExtractPlugin(),
   ],
   resolve: {
     extensions: ['.css', '.js', '.ts'],
   },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    path: path.resolve(root, 'dist'),
     clean: true,
   },
 });
