@@ -1,175 +1,246 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" href="localhost:8080/" hreflang="en" />
+    <title>Luffer Fireworks</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="alternate" href="localhost:8080/" hreflang="en" />
-  <title>Luffer Fireworks</title>
-</head>
+  <body class="bg-homeImg bg-cover bg-fixed bg-center lg:bg-none">
+    <section
+      id="home"
+      class="flex min-h-screen flex-col lg:bg-homeImg lg:bg-cover lg:bg-fixed lg:bg-center"
+    >
+      <header class="flex h-[48px] justify-between px-4">
+        <div class="flex items-center">
+          <image src="../assets/logo.svg" alt="logo" />
+          <span class="font-bold text-primary">Fireworks</span>
+        </div>
+        <div class="flex items-center font-bold text-light">
+          <a
+            id="en"
+            class="cursor-pointer px-4 hover:text-primary"
+            href="../index.html"
+            >EN</a
+          >
+          <a
+            id="es"
+            class="cursor-pointer border-l px-4 text-primary hover:text-primary"
+            href="#"
+            >ES</a
+          >
+        </div>
+      </header>
 
-<body class="bg-homeImg bg-cover bg-fixed bg-center lg:bg-none">
-  <section id="home" class="flex min-h-screen flex-col lg:bg-homeImg lg:bg-cover lg:bg-fixed lg:bg-center">
-    <header class="flex h-[48px] justify-between px-4">
-      <div class="flex items-center">
-        <image src="../assets/logo.svg" alt="logo" />
-        <span class="font-bold text-primary">Fireworks</span>
-      </div>
-      <div class="flex items-center font-bold text-light">
-        <a id="en" class="cursor-pointer px-4 hover:text-primary" href="../index.html">EN</a>
-        <a id="es" class="cursor-pointer border-l px-4 text-primary hover:text-primary" href="#">ES</a>
-      </div>
-    </header>
+      <main class="flex flex-1 justify-center">
+        <h1
+          id="title"
+          class="text-light-light w-auto self-center justify-self-center text-5xl font-semibold text-light md:text-7xl lg:text-9xl"
+        >
+          Guia<br />Al Mundo<br />En La Noche
+        </h1>
+      </main>
+    </section>
 
-    <main class="flex flex-1 justify-center">
-      <h1 id="title"
-        class="text-light-light w-auto self-center justify-self-center text-5xl font-semibold text-light md:text-7xl lg:text-9xl">
-        Guia<br />Al Mundo<br />En La Noche
-      </h1>
-    </main>
-  </section>
-
-  <div class="lg:flex lg:bg-aboutImg lg:bg-cover lg:bg-fixed lg:bg-center">
-    <div class="items-center lg:w-1/2">
-      <section class="flex min-h-screen w-full flex-col justify-center gap-20">
-        <h2 class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:text-5xl">
-          Sobre Nosotros
-        </h2>
-        <p class="mx-auto w-3/4 text-center text-xl text-light md:w-1/2 lg:w-3/4 lg:text-2xl xl:text-4xl">
-          Bienvenido a Fireworks, su principal destino para exhibiciones
-          pirotécnicas deslumbrantes y celebraciones explosivas. Como empresa
-          líder en fuegos artificiales, nos especializamos en crear momentos
-          inolvidables en el cielo nocturno, transformando eventos ordinarios
-          en espectáculos extraordinarios.
-        </p>
-      </section>
-    </div>
-
-    <div class="items-center lg:w-1/2">
-      <section class="flex min-h-screen w-full flex-col lg:justify-center">
-        <div class="flex h-full flex-1 flex-col justify-center gap-20">
-          <h2 class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:hidden">
-            Galeria
+    <div class="lg:flex lg:bg-aboutImg lg:bg-cover lg:bg-fixed lg:bg-center">
+      <div class="items-center lg:w-1/2">
+        <section
+          class="flex min-h-screen w-full flex-col justify-center gap-20"
+        >
+          <h2
+            class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:text-5xl"
+          >
+            Sobre Nosotros
           </h2>
-          <div id="gallery" class="flex flex-col items-center justify-evenly"></div>
+          <p
+            class="mx-auto w-3/4 text-center text-xl text-light md:w-1/2 lg:w-3/4 lg:text-2xl xl:text-4xl"
+          >
+            Bienvenido a Fireworks, su principal destino para exhibiciones
+            pirotécnicas deslumbrantes y celebraciones explosivas. Como empresa
+            líder en fuegos artificiales, nos especializamos en crear momentos
+            inolvidables en el cielo nocturno, transformando eventos ordinarios
+            en espectáculos extraordinarios.
+          </p>
+        </section>
+      </div>
+
+      <div class="items-center lg:w-1/2">
+        <section class="flex min-h-screen w-full flex-col lg:justify-center">
+          <div class="flex h-full flex-1 flex-col justify-center gap-20">
+            <h2
+              class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:hidden"
+            >
+              Galeria
+            </h2>
+            <div
+              id="gallery"
+              class="flex flex-col items-center justify-evenly"
+            ></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section
+      class="flex min-h-screen flex-col justify-center gap-20 lg:bg-testimonyImg lg:bg-cover lg:bg-fixed lg:bg-center"
+    >
+      <h2
+        class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:text-5xl"
+      >
+        Testimonios
+      </h2>
+      <div
+        class="no-scrollbar flex w-full overflow-x-scroll lg:mx-auto lg:mt-20 lg:w-3/4 lg:justify-center"
+      >
+        <div
+          id="testimonies"
+          class="flex h-full gap-4 self-center lg:flex-wrap lg:justify-center"
+        >
+          <template>
+            <div
+              class="flex h-[320px] w-[300px] shrink-0 flex-col items-center"
+            >
+              <img class="h-[64px] w-[64px] rounded-full object-cover" />
+              <h3 class="mt-2 text-xl font-bold text-light"></h3>
+              <p class="mt-2 p-4 text-center text-light"></p>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <div class="lg:bg-contactImg lg:bg-cover lg:bg-fixed lg:bg-center">
+      <section class="flex min-h-screen flex-col justify-center gap-20">
+        <h2
+          class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:text-5xl"
+        >
+          Contactanos
+        </h2>
+
+        <div class="lg:flex lg:flex-1">
+          <div class="lg:flex lg:w-1/2 lg:items-center">
+            <form
+              id="form"
+              class="mx-auto flex w-3/4 flex-col justify-evenly gap-4 lg:h-full lg:w-3/4"
+            >
+              <input
+                name="name"
+                placeholder="Ingrese su nombre"
+                class="rounded-2xl p-4 font-bold placeholder:font-bold"
+                required
+                minlength="2"
+                maxlength="20"
+              />
+              <input
+                type="email"
+                placeholder="Ingrese su email"
+                name="email"
+                class="rounded-2xl p-4 font-bold placeholder:font-bold"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Ingrese su asunto (opcional)"
+                name="subject"
+                class="rounded-2xl p-4 font-bold placeholder:font-bold"
+                required
+              />
+              <textarea
+                placeholder="Ingrese su mensaje"
+                rows="5"
+                name="message"
+                class="rounded-2xl p-4 font-bold placeholder:font-bold"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                id="button"
+                class="relative w-full rounded-2xl bg-light p-4 text-center text-xl font-bold"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div class="lg:flex lg:w-1/2 lg:flex-col lg:justify-evenly">
+            <div class="mx-auto py-8 lg:mt-0 lg:py-0">
+              <table class="w-full text-center">
+                <tbody class="w-full">
+                  <tr>
+                    <td class="text-center md:w-1/4">
+                      <i
+                        class="fa-solid fa-location-dot mx-auto text-3xl text-light"
+                      ></i>
+                    </td>
+                    <td class="md:w-3/4">
+                      <address class="w-3/4 font-bold not-italic text-light">
+                        False Building, 123, 1st floor False Street 1234, False
+                        City
+                      </address>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="w-1/4 text-center">
+                      <i class="fa-solid fa-envelope text-3xl text-light"></i>
+                    </td>
+                    <td class="w-3/4">
+                      <h4 class="w-3/4 font-bold text-light">
+                        mail@example.com
+                      </h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="w-1/4 text-center">
+                      <i class="fa-solid fa-phone text-3xl text-light"></i>
+                    </td>
+                    <td class="w-3/4">
+                      <h4 class="w-3/4 font-bold text-light">111-2222-333</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="w-1/4 text-center">
+                      <i class="fa-solid fa-clock text-3xl text-light"></i>
+                    </td>
+                    <td class="w-3/4">
+                      <h4 class="w-3/4 font-bold text-light">
+                        lun - dom: 10:00AM - 07:00PM hs
+                      </h4>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.200496236924!2d-87.65361342344781!3d41.867032571242945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ce522ef1a63%3A0x8c72492ba7108a09!2s999%20Roosevelt%20Rd%2C%20Chicago%2C%20IL%2060608%2C%20USA!5e0!3m2!1sen!2sar!4v1690823895866!5m2!1sen!2sar"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
-    </div>
-  </div>
 
-  <section
-    class="flex min-h-screen flex-col justify-center gap-20 lg:bg-testimonyImg lg:bg-cover lg:bg-fixed lg:bg-center">
-    <h2 class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:text-5xl">
-      Testimonios
-    </h2>
-    <div class="no-scrollbar flex w-full overflow-x-scroll lg:mx-auto lg:mt-20 lg:w-3/4 lg:justify-center">
-      <div id="testimonies" class="flex h-full gap-4 self-center lg:flex-wrap lg:justify-center">
-        <template>
-          <div class="flex h-[320px] w-[300px] shrink-0 flex-col items-center">
-            <img class="h-[64px] w-[64px] rounded-full object-cover" />
-            <h3 class="mt-2 text-xl font-bold text-light"></h3>
-            <p class="mt-2 p-4 text-center text-light"></p>
-          </div>
-        </template>
-      </div>
-    </div>
-  </section>
-
-  <section
-    class="flex min-h-screen flex-col justify-center gap-20 lg:bg-contactImg lg:bg-cover lg:bg-fixed lg:bg-center">
-    <h2 class="text-light-light mx-auto text-center text-3xl font-bold text-light md:text-4xl lg:text-5xl">
-      Contactanos
-    </h2>
-
-    <div class="lg:flex lg:flex-1">
-      <div class="lg:flex lg:w-1/2 lg:items-center">
-        <form id="form" class="mx-auto flex w-3/4 flex-col justify-evenly gap-4 lg:h-full lg:w-3/4">
-          <input name="name" placeholder="Ingrese su nombre" class="rounded-2xl p-4 font-bold placeholder:font-bold"
-            required minlength="2" maxlength="20" />
-          <input type="email" placeholder="Ingrese su email" name="email"
-            class="rounded-2xl p-4 font-bold placeholder:font-bold" required />
-          <input type="text" placeholder="Ingrese su asunto (opcional)" name="subject"
-            class="rounded-2xl p-4 font-bold placeholder:font-bold" required />
-          <textarea placeholder="Ingrese su mensaje" rows="5" name="message"
-            class="rounded-2xl p-4 font-bold placeholder:font-bold" required></textarea>
-          <button type="submit" id="button"
-            class="relative w-full rounded-2xl bg-light p-4 text-center text-xl font-bold">
-            Enviar
-          </button>
-        </form>
-      </div>
-      <div class="lg:flex lg:w-1/2 lg:flex-col lg:justify-evenly">
-        <div class="mx-auto py-8 lg:mt-0 lg:py-0">
-          <table class="w-full text-center">
-            <tbody class="w-full">
-              <tr>
-                <td class="text-center md:w-1/4">
-                  <i class="fa-solid fa-location-dot mx-auto text-3xl text-light"></i>
-                </td>
-                <td class="md:w-3/4">
-                  <h4 class="w-3/4 font-bold text-light">
-                    False Building, 123, 1st floor False Street 1234, False
-                    City
-                  </h4>
-                </td>
-              </tr>
-              <tr>
-                <td class="w-1/4 text-center">
-                  <i class="fa-solid fa-envelope text-3xl text-light"></i>
-                </td>
-                <td class="w-3/4">
-                  <h4 class="w-3/4 font-bold text-light">mail@example.com</h4>
-                </td>
-              </tr>
-              <tr>
-                <td class="w-1/4 text-center">
-                  <i class="fa-solid fa-phone text-3xl text-light"></i>
-                </td>
-                <td class="w-3/4">
-                  <h4 class="w-3/4 font-bold text-light">111-2222-333</h4>
-                </td>
-              </tr>
-              <tr>
-                <td class="w-1/4 text-center">
-                  <i class="fa-solid fa-clock text-3xl text-light"></i>
-                </td>
-                <td class="w-3/4">
-                  <h4 class="w-3/4 font-bold text-light">
-                    lun - dom: 10:00AM - 07:00PM hs
-                  </h4>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <footer class="py-8">
+        <div class="flex w-full items-center justify-around">
+          <a alt="facebook" href="https://www.facebook.com">
+            <i class="fa-brands fa-square-facebook text-4xl text-light"></i>
+          </a>
+          <a alt="linkedin" href="https://www.linkedin.com">
+            <i class="fa-brands fa-linkedin text-4xl text-light"></i>
+          </a>
+          <a alt="twitter" href="https://www.twitter.com">
+            <i class="fa-brands fa-square-twitter text-4xl text-light"></i>
+          </a>
+          <a alt="instagram" href="https://www.instagram.com">
+            <i class="fa-brands fa-square-instagram text-4xl text-light"></i>
+          </a>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.200496236924!2d-87.65361342344781!3d41.867032571242945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ce522ef1a63%3A0x8c72492ba7108a09!2s999%20Roosevelt%20Rd%2C%20Chicago%2C%20IL%2060608%2C%20USA!5e0!3m2!1sen!2sar!4v1690823895866!5m2!1sen!2sar"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+        <i class="mx-auto mt-4 block text-center text-light">
+          © Copyright 20XX - 20XX
+          <br />
+          Todos los derechos reservados.
+        </i>
+      </footer>
     </div>
-  </section>
-
-  <footer class="py-8">
-    <div class="flex w-full items-center justify-around">
-      <a alt="facebook" href="https://www.facebook.com">
-        <i class="fa-brands fa-square-facebook text-4xl text-light"></i>
-      </a>
-      <a alt="linkedin" href="https://www.linkedin.com">
-        <i class="fa-brands fa-linkedin text-4xl text-light"></i>
-      </a>
-      <a alt="twitter" href="https://www.twitter.com">
-        <i class="fa-brands fa-square-twitter text-4xl text-light"></i>
-      </a>
-      <a alt="instagram" href="https://www.instagram.com">
-        <i class="fa-brands fa-square-instagram text-4xl text-light"></i>
-      </a>
-    </div>
-    <i class="mx-auto mt-4 block text-center text-light">
-      © Copyright 20XX - 20XX
-      <br />
-      Todos los derechos reservados.
-    </i>
-  </footer>
-</body>
-
+  </body>
 </html>
