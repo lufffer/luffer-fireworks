@@ -37,13 +37,14 @@ document.addEventListener('DOMContentLoaded', (): void => {
     }, 30 * i);
   }
   animation.play();
+  
+  window.addEventListener('load', () => {
+    const $loaderSection = document.getElementById('loader')!;
+    $loaderSection.classList.add('hidden');
+    animation.stop();
+  });
 
   setTimeout(() => {
-    window.addEventListener('load', () => {
-      const $loaderSection = document.getElementById('loader')!;
-      $loaderSection.classList.add('hidden');
-      animation.stop();
-    });
     // Add carousel
     document.getElementById('gallery')!.appendChild(new Carousel(images, { class: 'carousel' }).getCarousel());
 
