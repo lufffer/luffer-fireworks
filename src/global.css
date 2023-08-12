@@ -49,10 +49,6 @@ iframe {
   margin: 0 auto;
 }
 
-section {
-  padding: 2rem;
-}
-
 td {
   padding: 0.5rem 0;
 }
@@ -87,6 +83,10 @@ td {
 }
 
 @media only screen and (min-width: 768px) {
+  section {
+    padding: 2rem;
+  }
+
   .carousel {
     height: 75vh;
   }
