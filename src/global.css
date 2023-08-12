@@ -69,6 +69,22 @@ td {
   color: red;
 }
 
+.loader {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--dark);
+  transition: transform 0.25s linear;
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
+
 @media only screen and (min-width: 768px) {
   .carousel {
     height: 75vh;
