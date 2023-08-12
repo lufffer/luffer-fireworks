@@ -25,8 +25,8 @@ import { toastifyConfigError, toastifyConfigSuccess } from './config/toastify';
 
 document.addEventListener('DOMContentLoaded', (): void => {
   const $canvas = document.querySelector('#canvas')! as HTMLCanvasElement;
-  $canvas.height = 500;
-  $canvas.width = 500;
+  $canvas.height = window.innerHeight / 2;
+  $canvas.width = window.innerWidth;
   const animation = Loader($canvas);
   animation.addCircle(circle1);
   animation.addCircle(circle2);
