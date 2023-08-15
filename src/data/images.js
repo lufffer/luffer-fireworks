@@ -1,9 +1,9 @@
-import image1 from '../assets/home.jpg';
-import image2 from '../assets/about.jpg';
-import image3 from '../assets/contact.jpg';
-import image4 from '../assets/mine.jpg';
-import image5 from '../assets/sparckle.jpg';
-import image6 from '../assets/testimonies.jpg';
+import image1 from '../assets/home.jpg?as=webp';
+import image2 from '../assets/about.jpg?as=webp';
+import image3 from '../assets/contact.jpg?as=webp';
+import image4 from '../assets/mine.jpg?as=webp';
+import image5 from '../assets/sparckle.jpg?as=webp';
+import image6 from '../assets/testimonies.jpg?as=webp';
 
 export default [
   {image: image1},

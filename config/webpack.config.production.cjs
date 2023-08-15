@@ -22,11 +22,22 @@ module.exports = (root) => ({
       new CssMinizerWebpackPlugin(),
       new ImageMinimizerWebpackPlugin({
         minimizer: {
-          implementation: ImageMinimizerWebpackPlugin.imageminMinify,
-          options: {
-            plugins: [['mozjpeg', {quality: 50}]]
-          }
+          implementation: ImageMinimizerWebpackPlugin.sharpMinify,
         },
+        generator: [
+          {
+            // You can apply generator using `?as=webp`, you can use any name and provide more options
+            preset: 'webp',
+            implementation: ImageMinimizerWebpackPlugin.sharpGenerate,
+            options: {
+              encodeOptions: {
+                webp: {
+                  quality: 75,
+                },
+              },
+            },
+          },
+        ],
       }),
     ],
     moduleIds: 'deterministic',
