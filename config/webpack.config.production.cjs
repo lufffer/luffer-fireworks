@@ -21,9 +21,6 @@ module.exports = (root) => ({
     minimizer: [
       new CssMinizerWebpackPlugin(),
       new ImageMinimizerWebpackPlugin({
-        minimizer: {
-          implementation: ImageMinimizerWebpackPlugin.sharpMinify,
-        },
         generator: [
           {
             // You can apply generator using `?as=webp`, you can use any name and provide more options
